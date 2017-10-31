@@ -14,10 +14,19 @@ namespace MovieApplication.Models
     
     public partial class Movie
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Movie()
+        {
+            this.Rentals = new HashSet<Rental>();
+        }
+    
         public int MovieID { get; set; }
         public string Title { get; set; }
         public string Director { get; set; }
         public string Genre { get; set; }
         public Nullable<System.DateTime> ReleaseDate { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Rental> Rentals { get; set; }
     }
 }

@@ -18,5 +18,8 @@ namespace MovieApplication.Models
         public int CustomerID { get; set; }
         public int MovieID { get; set; }
         public System.DateTime DateRented { get; set; }
+    
+        public virtual Customer Customer { get; set; }
+        public virtual Movie Movie { get; set; }
     }
 }

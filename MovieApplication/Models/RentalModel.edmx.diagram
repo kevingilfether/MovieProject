@@ -8,6 +8,13 @@
         <EntityTypeShape EntityType="MoviesDBModel.Customer" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="MoviesDBModel.Movie" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="MoviesDBModel.Rental" Width="1.5" PointX="4.875" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="MoviesDBModel.FK_Rental_Customer" ManuallyRouted="true" >
+          <ConnectorPoint PointX="2.25" PointY="0.75115284615384614" />
+          <ConnectorPoint PointX="2.6261528461538459" PointY="0.375" />
+          <ConnectorPoint PointX="4.5011528461538459" PointY="0.375" />
+          <ConnectorPoint PointX="4.8761528461538459" PointY="0.75" />
+        </AssociationConnector>
+        <AssociationConnector Association="MoviesDBModel.FK_Rental_Movie" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
